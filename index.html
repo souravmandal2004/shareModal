@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareModal | Mandal</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/9364a5392d.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <!--image-->
+            <div>
+                <img src="./modified-profile.png" alt="">
+            </div>
+
+            <!--User Name-->
+            <div class="user-name">
+                <h2>Sourav Mandal</h2>
+            </div>
+
+            <!--About-->
+            <div class="designation">
+                <h3>Web Developer</h3>
+            </div>
+
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share my Profile</div>
+                </button>
+
+                <button class="btn-follow btn-card">Follow me</button>
+            </div>
+        </div>
+    </div> 
+
+
+    <!--Modal Component-->
+
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+   
+
+
+    <div>
+        <h3>Share this via</h3>
+        <!--Facebook-->
+        <div class="icon-container">
+            <a href="https://www.facebook.com/profile.php?id=100034376347168" class="icon" id="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        
+        <!--Twitter-->
+            <a href="https://twitter.com/RITTIKMANDAL10" class="icon" id="twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        <!--Instagram-->    
+            <a href="https://www.instagram.com/_____._mandal_._____/" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        <!--LinkedIn-->
+            <a href="https://www.linkedin.com/in/sourav-mandal-b075b122b/" class="icon" id="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        <!--Telegram-->
+            <a href="https://web.telegram.org/a/" class="icon" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+    <!--Overlay-->
+
+    <div class="overlay" onclick="closeModal()"></div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
